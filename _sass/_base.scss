@@ -881,10 +881,20 @@ h2 {
   font-size: 1.75rem;
 }
 
-.post .header-bar h1 {
-  font-family: 'Mynerve', cursive !important;
-  font-size: 3.5rem;
-  text-align: center;  // To override the dir="auto" text-align: initial;
+.post .header-bar {
+  h1 {
+    font-family: 'Mynerve', cursive !important;
+    font-size: 3.5rem;
+    text-align: center;  // To override the dir="auto" text-align: initial;
+  };
+  h2 {
+    text-align: center;  // To override the dir="auto" text-align: initial;
+    color: gray;
+    a {
+      color: rgb(99, 195, 228);
+      text-decoration: underline;
+    }
+  }
 }
 
 .post .header-bar h2 {
@@ -1006,6 +1016,10 @@ div.post div.tag-list {
 // This is needed for dir="auto" to work, otherwise will be rendered as LTR
 h1, h2, h3, p {
   text-align: initial;
+}
+
+article h2 {
+  padding-top: 5px;
 }
 
 div.abstract.hidden.open {
