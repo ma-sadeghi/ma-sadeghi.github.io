@@ -858,3 +858,180 @@ pre {
     opacity: 1;
   }
 }
+
+// Custom styles
+@import url('https://fonts.googleapis.com/css2?family=Mynerve&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Vazirmatn:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+html[data-theme='light'] body {
+  background: url("/assets/img/background.png");
+}
+
+p, h1, h2, h3, h4, h5, h6, em, div, li, span, strong {
+  font-family: 'Asap', 'Vazirmatn', 'Open Sans', 'Adobe Clean' !important;
+}
+
+code, code span, pre code span {
+  font-family: monospace !important;
+}
+
+h2 {
+  font-size: 1.75rem;
+}
+
+.post .header-bar h1 {
+  font-family: 'Mynerve', cursive !important;
+  font-size: 3.5rem;
+  text-align: center;  // To override the dir="auto" text-align: initial;
+}
+
+.post .header-bar h2 {
+  font-size: 1.5rem;
+}
+
+abbr.badge {
+  border-radius: 5px;
+}
+
+div.post > article {
+  padding: 20px;
+  border: solid 1px lightgray;
+  border-radius: 5px;
+}
+
+html[data-theme='light'] div.post > article {
+  background-color: white;
+}
+
+html[data-theme='dark'] div.title {
+  color: rgb(0, 147, 170);
+}
+
+html[data-theme='light'] div.title {
+  color: rgb(0, 47, 255);
+}
+
+.social .contact-icons {
+  font-size: 3rem !important;
+}
+
+a.btn.btn-sm.z-depth-0 {
+  border-radius: 10px         !important;
+  padding: 0 0.3rem 0 0.3rem  !important;
+  font-size: 0.8rem;
+}
+
+div.publications {
+  margin-top: 1rem;
+}
+
+div.periodical, div.author {
+  display: inline;
+}
+
+div.address {
+  font-family: monospace !important;
+  font-size: 0.85rem  !important;
+}
+
+table.table.publications td {
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+}
+
+.news table th {
+  font-size: 1rem !important;
+  width: 105px;
+}
+
+.publications div.badges {
+  height: 10px;
+}
+
+.publications ol.bibliography li {
+  margin-bottom: 0rem !important;
+}
+
+.publications h2.year {
+  margin-top: 0rem !important;
+}
+
+h1, h2, h3 {
+  font-family: Roboto, Georgia, 'Times New Roman', Times, serif;
+}
+
+div.header-bar {
+  padding-top: 0;
+  padding-bottom: 1rem;
+}
+
+ul.post-list {
+  margin-top: 2rem;
+}
+
+ul.post-list > li {
+  padding-top: 1rem;
+  padding-bottom: 0;
+}
+
+ul.post-list > li > h3 + p {
+  display: none;
+}
+
+a[href="/news/"], a[href="/publications/"], a[href="/blog/"], a.nav-link {
+  text-transform: capitalize;
+}
+
+.tag-list {
+  margin-bottom: 1rem;
+  ul {
+    p, li {
+      padding: 0rem 0.1rem;
+    }
+  }
+}
+
+div.tag-list > ul > li + p {
+  margin-bottom: 0.2rem;
+  // background-color: red;
+  // display: none;
+}
+
+div.post div.tag-list {
+  padding-top: 0.2rem;
+}
+
+// This is needed for dir="auto" to work, otherwise will be rendered as LTR
+h1, h2, h3, p {
+  text-align: initial;
+}
+
+div.abstract.hidden.open {
+  border-radius: 5px;
+}
+
+table.table-sm th, table.table-sm td {
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+}
+
+// div.profile img {
+//   border-radius: 50% !important;
+// }
+
+header.post-header > figure > picture > img {
+  max-width: 105px;
+  border-radius: 50% !important;
+  float: left;
+  margin-right: 20px;
+}
+
+table.table th {
+  padding-left: 0;
+}
+
+span#former {
+  color: gray
+}
