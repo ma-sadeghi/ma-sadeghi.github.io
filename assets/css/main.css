@@ -778,8 +778,12 @@ pre:active .copy, pre:focus .copy, pre:hover .copy {
   opacity: 1;
 }
 
-html[data-theme=light] body {
+body {
   background: url("/assets/img/background.png");
+}
+html[data-theme=dark] body {
+  background: none;
+  background-color: var(--global-bg-color);
 }
 
 p, h1, h2, h3, h4, h5, h6, em, div, li, span, strong {
@@ -822,16 +826,18 @@ div.post > article {
   border-radius: 5px;
 }
 
-html[data-theme=light] div.post > article {
+div.post > article {
   background-color: white;
 }
-
-html[data-theme=dark] div.title {
-  color: rgb(0, 147, 170);
+html[data-theme=dark] div.post > article {
+  background-color: var(--global-bg-color);
 }
 
-html[data-theme=light] div.title {
+div.title {
   color: rgb(0, 47, 255);
+}
+html[data-theme=dark] div.title {
+  color: rgb(0, 147, 170);
 }
 
 .social .contact-icons {
