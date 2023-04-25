@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Use LaTeX in Python f-strings
-date: 2023-03-10 7:00:00
+date: 2023-04-25 00:05:00
 # description: Add a description here (optional)
 tags: howto, python, latex, interpolation
 categories:
