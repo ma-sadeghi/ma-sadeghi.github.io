@@ -821,6 +821,14 @@ abbr.badge {
   border-radius: 5px;
 }
 
+div.abbr {
+  display: none;
+}
+
+div.links {
+  display: inline;
+}
+
 div.post > article {
   padding: 20px;
   border: solid 1px lightgray;
@@ -846,17 +854,17 @@ html[data-theme=dark] div.title {
 }
 
 a.btn.btn-sm.z-depth-0 {
-  border-radius: 10px !important;
+  border: none !important;
   padding: 0 0.3rem 0 0.3rem !important;
-  font-size: 0.8rem;
+  font-size: 1.2rem;
 }
 
 div.publications {
   margin-top: 1rem;
 }
 
-div.periodical, div.author {
-  display: inline;
+div.periodical {
+  padding-right: 2px;
 }
 
 div.address {
