@@ -795,7 +795,7 @@ code, code span, pre code span {
 }
 
 h2 {
-  font-size: 1.75rem;
+  font-size: 1.5rem;
 }
 
 .post .header-bar h1 {
@@ -803,11 +803,12 @@ h2 {
   font-size: 3.5rem;
   text-align: center;
 }
-.post .header-bar h2 {
+.post .header-bar h2 div#blog_desc {
+  font-size: 1.25rem;
   text-align: center;
   color: gray;
 }
-.post .header-bar h2 a {
+.post .header-bar h2 div#blog_desc a {
   color: rgb(99, 195, 228);
   text-decoration: underline;
 }
@@ -950,6 +951,9 @@ header.post-header > figure > picture > img {
   margin-right: 20px;
 }
 
+table.table {
+  margin-bottom: 0.25rem;
+}
 table.table th {
   padding-left: 0;
 }
@@ -959,8 +963,8 @@ span#former {
 }
 
 hr {
-  margin-top: 0.25rem;
-  margin-bottom: 0.5rem;
+  margin-top: 1rem;
+  margin-bottom: 0.8rem;
 }
 
 /*******************************************************************************
