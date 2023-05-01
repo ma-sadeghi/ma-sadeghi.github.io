@@ -414,6 +414,12 @@ footer.sticky-bottom {
   }
 }
 
+.post-title {
+  mjx-container[jax="CHTML"][display="true"] {
+    display: unset;
+  }
+}
+
 .post-list {
   margin: 0;
   margin-bottom: 40px;
@@ -445,6 +451,10 @@ footer.sticky-bottom {
       &:hover {
         color: var(--global-theme-color);
       }
+    }
+
+    mjx-container[jax="CHTML"][display="true"] {
+      display: unset;
     }
   }
 }
@@ -826,29 +836,21 @@ progress::-moz-progress-bar {
   height: inherit;
 }
 
-pre {
-  padding: 8px 12px;
+/* Copy button */
+.code-display-wrapper {
   position: relative;
 
-  /* Copy code to clipboard button */
   .copy {
     background: var(--global-card-bg-color);
     border-color: var(--global-bg-color);
     border-radius: .3rem;
-    border-style: solid;
+    border-style: none;
     color: var(--global-text-color);
     font-size: medium;
     opacity: 0;
     position: absolute;
-    right: .25rem;
-    top: .25rem;
-
-    &:active,
-    &:focus,
-    &:hover {
-      color: var(--global-hover-color);
-      opacity: 1;
-    }
+    right: .15rem;
+    top: .15rem;
   }
 
   &:active .copy,
@@ -859,218 +861,41 @@ pre {
   }
 }
 
-// Custom styles
-@import url('https://fonts.googleapis.com/css2?family=Mynerve&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-// @import url('https://fonts.googleapis.com/css2?family=Vazirmatn:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-// @import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+nav[data-toggle="toc"] {
+  top: 5rem;
 
-body {
-  background: url("/assets/img/background.png");
-  html[data-theme='dark'] & {
-    background: none;
-    background-color: var(--global-bg-color);
+  .nav .nav>li>a {
+    font-size: .75rem;
   }
-}
 
-p, h1, h2, h3, h4, h5, h6, em, div, li, span, strong {
-  font-family: 'Asap', 'Vazirmatn', 'Open Sans', 'Adobe Clean' !important;
-}
+  .nav>li>a {
+    color: var(--global-text-color);
+    font-size: .75rem;
 
-code, code span, pre code span {
-  font-family: monospace !important;
-}
+    &:hover {
+      color: var(--global-hover-color);
+      border-left-color: var(--global-hover-color);
+    }
+  }
 
-h2 {
-  font-size: 1.5rem;
-}
+  .nav-link.active {
+    color: var(--global-theme-color);
+    border-left-color: var(--global-theme-color);
+    font-size: .75rem;
 
-.post .header-bar {
-  h1 {
-    font-family: 'Mynerve', cursive !important;
-    font-size: 3.5rem;
-    text-align: center;  // To override the dir="auto" text-align: initial;
-  };
-  h2 div#blog_desc{
-    font-size: 1.25rem;
-    text-align: center;  // To override the dir="auto" text-align: initial;
-    color: gray;
-    a {
-      color: rgb(99, 195, 228);
-      text-decoration: underline;
+    &:hover {
+      color: var(--global-hover-color);
+      border-left-color: var(--global-hover-color);
     }
   }
 }
 
-.post .header-bar h2 {
-  font-size: 1.5rem;
-}
-
-abbr.badge {
-  border-radius: 5px;
-}
-
-div.abbr {
-  display: none;
-}
-
-div.links {
-  display: inline;
-}
-
-div.post > article {
-  padding: 20px;
-  border: solid 1px lightgray;
-  border-radius: 7px;
-}
-
-div.post > article {
-  background-color: white;
-  html[data-theme='dark'] & {
-    background-color: var(--global-bg-color);
+/* small screens */
+@media (max-width: 576px) {
+  /* override stickyness so that the navigation does not follow scrolling */
+  nav[data-toggle="toc"] {
+    visibility: hidden;
+    height: 0;
+    top: 0;
   }
-}
-
-div.title {
-  color: rgb(0, 47, 255);
-  html[data-theme='dark'] & {
-    color: rgb(0, 147, 170);
-  }
-}
-
-.social .contact-icons {
-  font-size: 3rem !important;
-}
-
-a.btn.btn-sm.z-depth-0 {
-  // border-radius: 10px         !important;
-  border: none                !important;
-  padding: 0 0.3rem 0 0.3rem  !important;
-  font-size: 1.2rem;
-}
-
-div.publications {
-  margin-top: 1rem;
-}
-
-div.periodical {
-  // display: inline;
-  padding-right: 2px;
-}
-
-div.address {
-  font-family: monospace !important;
-  font-size: 0.85rem  !important;
-}
-
-table.table.publications td {
-  padding-top: 0.2rem;
-  padding-bottom: 0.2rem;
-}
-
-.news table th {
-  font-size: 1rem !important;
-  width: 105px;
-}
-
-.publications div.badges {
-  height: 10px;
-}
-
-.publications ol.bibliography li {
-  margin-bottom: 0rem !important;
-}
-
-.publications h2.year {
-  margin-top: 0rem !important;
-}
-
-h1, h2, h3 {
-  font-family: Roboto, Georgia, 'Times New Roman', Times, serif;
-}
-
-div.header-bar {
-  padding-top: 0;
-  padding-bottom: 1rem;
-}
-
-ul.post-list {
-  margin-top: 2rem;
-}
-
-ul.post-list > li {
-  padding-top: 1rem;
-  padding-bottom: 0;
-}
-
-ul.post-list > li > h3 + p {
-  display: none;
-}
-
-a[href="/news/"], a[href="/publications/"], a[href="/blog/"], a.nav-link {
-  text-transform: capitalize;
-}
-
-.tag-list {
-  margin-bottom: 1rem;
-  ul {
-    p, li {
-      padding: 0rem 0.1rem;
-    }
-  }
-}
-
-div.tag-list > ul > li + p {
-  margin-bottom: 0.2rem;
-  // background-color: red;
-  // display: none;
-}
-
-div.post div.tag-list {
-  padding-top: 0.2rem;
-}
-
-// This is needed for dir="auto" to work, otherwise will be rendered as LTR
-h1, h2, h3, p {
-  text-align: initial;
-}
-
-article h2 {
-  padding-top: 5px;
-}
-
-div.abstract.hidden.open {
-  border-radius: 5px;
-}
-
-table.table-sm th, table.table-sm td {
-  padding-top: 0.3rem;
-  padding-bottom: 0.3rem;
-}
-
-// div.profile img {
-//   border-radius: 50% !important;
-// }
-
-header.post-header > figure > picture > img {
-  max-width: 105px;
-  border-radius: 50% !important;
-  float: left;
-  margin-right: 20px;
-}
-
-table.table {
-  margin-bottom: 0.25rem;
-  th {
-    padding-left: 0;
-  }
-}
-
-span#former {
-  color: gray
-}
-
-hr {
-  margin-top: 1rem;
-  margin-bottom: 0.8rem;
 }
