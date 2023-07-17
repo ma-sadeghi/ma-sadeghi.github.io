@@ -138,9 +138,9 @@ related_blog_posts:
 # the information below.
 giscus:
   repo: ma-sadeghi/ma-sadeghi.github.io      # <your-github-user-name>/<your-github-repo-name>
-  repo_id: R_kgDOJaLUBg
+  repo_id: R_kgDOJ8V4-g
   category: Comments             # name of the category under which discussions will be created
-  category_id: DIC_kwDOJaLUBs4CWAKj
+  category_id: DIC_kwDOJ8V4-s4CX7xH
   mapping: title                 # identify discussions by post title
   strict: 1                      # use strict identification mode
   reactions_enabled: 1           # enable (1) or disable (0) emoji reactions
