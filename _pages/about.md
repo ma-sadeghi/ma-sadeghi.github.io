@@ -3,7 +3,7 @@ layout: about
 title: about
 permalink: /
 subtitle: >
-  Sessional Instructor <a href='http://uwaterloo.ca/'>@UWaterloo</a> <br>
+  Postdoc <a href='http://utoronto.ca/'>@University of Toronto</a> <br>
   <span id="former">
     Previously Postdoc <a href='http://uwaterloo.ca/'>@UWaterloo</a>,
     PhD <a href='http://mcgill.ca/'>@McGill</a>,
