@@ -286,3 +286,31 @@
   journal={Journal of The Electrochemical Society},
   year={2023}
 }
+
+@article{sadeghi2024predicting,
+  abbr={APEN},
+  abstract={A pore-scale model of a PEMFC cathode catalyst layer was developed using the pore network approach and used to predict polarization behavior. A volumetric image of a PEMFC catalyst layer was obtained using FIB-SEM with 4 nm resolution in all 3 directions. The original image only differentiated between solid and void, so a simple but effective algorithm was developed to insert tightly packed, but non-overlapping carbon spheres into the solid phase, which were then decorated with catalyst sites. The resultant image was a 4-phase image containing void, ionomer, carbon, and catalyst, each in proportion to the known Pt loading, carbon-to-ionomer ratio, and porosity. A multiphase pore network model was extracted from this image, and multiphysics simulations were conducted to predict the polarization behavior of an operating cell. It was shown that not only can beginning of life polarization performance be predicted with minimal fitting parameters, but degraded performance 30 k cycles was also well captured with no additional fitting. This latter result was accomplished by deleting catalyst sites from the network in proportion to the experimentally observed distribution of electrochemical surface area loss, obtained from TEM image of catalyst loading. The model included partitioning of oxygen into the ionomer phase, explicitly incorporating the oxygen transport resistance which dominates cell performance at higher current density. Although Knudsen diffusion is present at the scales present (< 100 nm), it represented a negligible fraction of the total transport resistance, which was dominated by the low solubility and slow diffusivity in the ionomer phase. This work showed that the performance of a typical PEMFC is highly dependent on the structural details of the catalyst layer, to the extent that polarization curves can be well predicted by direct inspection of an image of the catalyst layer. This work paves the way for a deeper understanding of the structure-performance relationship in these complex materials and the search for optimized catalyst layer designs.},
+  html={https://doi.org/10.1016/j.apenergy.2023.122004},
+  pdf={https://github.com/ma-sadeghi/assets/files/14392498/sadeghi2023apen.pdf},
+  title={Predicting PEMFC performance from a volumetric image of catalyst layer structure using pore network modeling},
+  author={Sadeghi, Mohammad Amin and Khan, Zohaib Atiq and Agnaou, Mehrez and Hu, Leiming and Litster, Shawn and Kongkanand, Anusorn and Padgett, Elliot and Muller, David A and Friscic, Tomislav and Gostick, Jeff},
+  journal={Applied Energy},
+  volume={353},
+  pages={122004},
+  year={2024},
+  publisher={Elsevier}
+}
+
+@article{ly2024rapid,
+  abbr={APEN},
+  abstract={A machine learning (ML) model was developed to study the discharge behaviour of a Li(x)Ni(0.33)Mn(0.33)Co(0.33)O2 half-cell with particle-scale resolution. The ML model could predict the state-of-lithiation of the particles as a function of time and C-rate. Although direct numerical simulation has been well established in this area as the prevalent method of modeling batteries, computational expense increases going from 1D-homogenized model to particle-resolved 3D models. The present ML model was trained on a total of sixty different electrodes with various lengths for a total of 4 different C-rates: 0.25, 1, 2, and 3C. The ML model used convolutional layers, resulting in an image-to-image regression network. To evaluate model performance, the root mean squared error was compared between the state of lithiation (SoL) predicted by the ML model and ground truth results from pore-scale direct numerical simulation (DNS) on unseen electrode configurations. It was shown that the ML model can predict the SoL at better than 99% accuracy in terms of relative error, but almost an order of magnitude faster than the DNS approach. The present work was limited to 2D cases but demonstrates that ML is a viable path forward for studying real 3D microstructures.},
+  html={https://doi.org/10.1016/j.apenergy.2024.122803},
+  pdf={https://github.com/ma-sadeghi/assets/files/14392486/ly2024apen.pdf},
+  title={Rapid prediction of particle-scale state-of-lithiation in Li-ion battery microstructures using convolutional neural networks},
+  author={Ly, Sam and Sadeghi, Mohammad Amin and Misaghian, Niloofar and Fathiannasab, Hamed and Gostick, Jeff},
+  journal={Applied Energy},
+  volume={360},
+  pages={122803},
+  year={2024},
+  publisher={Elsevier}
+}
