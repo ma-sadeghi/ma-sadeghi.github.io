@@ -46,8 +46,17 @@ h2 {
   }
 }
 
+h1.post-title {
+  margin: 0px;
+}
+
 .post .header-bar h2 {
   font-size: 1.5rem;
+}
+
+p.desc {
+  font-size: 1.15rem;
+  margin: 0px;
 }
 
 abbr.badge {
@@ -91,7 +100,11 @@ div.title {
 }
 
 .social .contact-icons {
-  font-size: 3rem !important;
+  font-size: 1.75rem !important;
+  text-align: left;
+  margin: 0px;
+  padding-top: 10px;
+  padding-bottom: 20px;
 }
 
 a.btn.btn-sm.z-depth-0 {
@@ -214,10 +227,11 @@ table.table-sm th, table.table-sm td {
 // }
 
 header.post-header > figure > picture > img {
-  max-width: 105px;
+  max-width: 130px;
   border-radius: 50% !important;
   float: left;
   margin-right: 20px;
+  border: solid 1px white;
 }
 
 table.table {
@@ -229,6 +243,10 @@ table.table {
 
 span#former {
   color: gray
+}
+
+span#former.hidden {
+  display: none;
 }
 
 hr {

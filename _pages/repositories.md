@@ -2,7 +2,7 @@
 layout: page
 permalink: /repositories/
 title: Code
-description: Public code repositories to which I've contributed significant code.
+description: Public code repositories which I've (co)developed.
 nav: true
 nav_order: 4
 ---
