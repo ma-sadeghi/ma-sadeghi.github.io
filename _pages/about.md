@@ -4,7 +4,7 @@ title: about
 permalink: /
 subtitle: >
   Research Scientist <a href='https://natural-resources.canada.ca/science-and-data/research-centres-and-labs/canmetmaterials/canmetmaterials/8234'>@CanmetMATERIALS</a> <br>
-  <span id="former">
+  <span id="former" class="hidden">
     Previously Postdoc <a href='https://utoronto.ca/'>@UToronto</a>, <a href='https://uwaterloo.ca/'>@UWaterloo</a>,
     PhD <a href='https://mcgill.ca/'>@McGill</a>,
     MSc & BSc <a href='https://en.sharif.edu/'>@SharifU</a>.
