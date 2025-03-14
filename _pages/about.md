@@ -5,7 +5,7 @@ permalink: /
 subtitle: >
   Senior Machine Learning Engineer <a href='https://carbonengineering.com/'>@Carbon</a>/<a href='https://oxy.com/'>Oxy</a> <br>
   <span id="former" class="visible">
-    Previously Machine Learning Scientist <a href='https://natural-resources.canada.ca/science-and-data/research-centres-and-labs/canmetmaterials/canmetmaterials/8234'>@CanmetMATERIALS</a>, Postdoc <a href='https://utoronto.ca/'>@UToronto</a>, <a href='https://uwaterloo.ca/'>@UWaterloo</a>,
+    Previously: ML Scientist <a href='https://natural-resources.canada.ca/science-and-data/research-centres-and-labs/canmetmaterials/canmetmaterials/8234'>@CanmetMATERIALS</a>, Postdoc <a href='https://utoronto.ca/'>@UToronto</a>, <a href='https://uwaterloo.ca/'>@UWaterloo</a>,
     PhD <a href='https://mcgill.ca/'>@McGill</a>,
     MSc & BSc <a href='https://en.sharif.edu/'>@SharifU</a>.
   </span>
@@ -30,4 +30,4 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I am a researcher interested in optimizing energy systems. Currently, I focus on creating digital twins for battery systems using both physics-based and data-driven methods, which can be used in an optimization loop to improve battery performance. I am also interested in using ML to speed up solving partial differential equations on complex geometries and large domains that otherwise take too long to solve using physics-based solvers. A good example is computing the tortuosity or permeability factor from 3D images of porous materials, which could take days.
+I'm a chemical engineer by training, and a machine learning and software engineer by practice. I have a strong background in numerical methods, optimization, and machine learning, with a focus on energy systems and materials science. I have worked on various projects, including developing machine learning models for predicting the performance of energy storage systems, optimizing the design of materials for energy applications, and creating software tools for data analysis and visualization. These days, I'm interested in developing machine learning models to speed up solving PDEs.
