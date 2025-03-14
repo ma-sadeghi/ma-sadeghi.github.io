@@ -5,14 +5,14 @@ permalink: /
 subtitle: >
   Senior Machine Learning Engineer <a href='https://carbonengineering.com/'>@Carbon</a>/<a href='https://oxy.com/'>Oxy</a> <br>
   <span id="former" class="visible">
-    Previously: ML Scientist <a href='https://natural-resources.canada.ca/science-and-data/research-centres-and-labs/canmetmaterials/canmetmaterials/8234'>@CanmetMATERIALS</a>, Postdoc <a href='https://utoronto.ca/'>@UToronto</a>, <a href='https://uwaterloo.ca/'>@UWaterloo</a>,
+    Previously: ML Scientist <a href='https://natural-resources.canada.ca/science-and-data/research-centres-and-labs/canmetmaterials/canmetmaterials/8234'>@CanmetMATERIALS</a>, Postdoc <a href='https://utoronto.ca/'>@UToronto</a>, <a href='https://uwaterloo.ca/'>@UWaterloo</a> <br>
     PhD <a href='https://mcgill.ca/'>@McGill</a>,
     MSc & BSc <a href='https://en.sharif.edu/'>@SharifU</a>.
   </span>
 
 profile:
   align: left
-  image: headshot.jpg
+  image: headshot_old.jpg
   image_circular: false # crops the image to make it circular
   more_info:
 
@@ -30,4 +30,4 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I'm a chemical engineer by training, and a machine learning and software engineer by practice. I have a strong background in numerical methods, optimization, and machine learning, with a focus on energy systems and materials science. I have worked on various projects, including developing machine learning models for predicting the performance of energy storage systems, optimizing the design of materials for energy applications, and creating software tools for data analysis and visualization. These days, I'm interested in developing machine learning models to speed up solving PDEs.
+I'm a chemical engineer by training, and a machine learning and software engineer by practice. I have a solid background in numerical methods, optimization, and machine learning. I'm the co-creator and maintainer of [OpenPNM](https://github.com/PMEAL/OpenPNM) and [PoreSpy](https://github.com/PMEAL/porespy), among other [open-source projects](https://github.com/ma-sadeghi/). Currently, I'm exploring using machine learning to accelerate PDE solvers - finding computational shortcuts for complex physics problems.
