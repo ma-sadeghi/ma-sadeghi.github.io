@@ -1,46 +1,65 @@
 // Custom styles
 @import url('https://fonts.googleapis.com/css2?family=Mynerve&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Vazirmatn:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Sarala:wght@400;700&display=swap');
-
-nav a.navbar-brand {
-  border: solid 2px;
-  border-radius: 5px;
-  padding: 2px 10px 2px 10px;
-  box-shadow: -4px -4px gray;  
-}
+// @import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Sarala:wght@400;700&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.cdnfonts.com/css/source-sans-pro');
 
 body {
   background: url("/assets/img/background.png");
+
   html[data-theme='dark'] & {
     background: none;
     background-color: var(--global-bg-color);
   }
 }
 
-p, h1, h2, h3, h4, h5, h6, em, div, li, span, strong {
-  font-family: 'Sarala', 'Hanken Grotesk', 'Vazirmatn', 'Open Sans', 'Adobe Clean' !important;
+// Override Bootstrap's default font-weight: 300
+a, p, div, span, td, th {
+  font-weight: 400;
 }
 
-code, code span, pre code span {
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+em,
+div,
+li,
+span,
+strong {
+  font-family: 'Source Sans Pro' !important;
+}
+
+code,
+code span,
+pre code span {
   font-family: monospace !important;
 }
 
 h2 {
   font-size: 1.5rem;
+  font-weight: bold;
 }
 
 .post .header-bar {
   h1 {
     font-family: 'Mynerve', cursive !important;
     font-size: 3.5rem;
-    text-align: center;  // To override the dir="auto" text-align: initial;
-  };
-  h2 div#blog_desc{
+    text-align: center; // To override the dir="auto" text-align: initial;
+  }
+
+  ;
+
+  h2 div#blog_desc {
     font-size: 1.25rem;
-    text-align: center;  // To override the dir="auto" text-align: initial;
+    text-align: center; // To override the dir="auto" text-align: initial;
     color: gray;
+
     a {
       color: rgb(99, 195, 228);
       text-decoration: underline;
@@ -73,11 +92,12 @@ div.links {
   display: inline;
 }
 
-div.post > article {
+div.post>article {
   padding: 20px;
   border: solid 1px lightgray;
   border-radius: 7px;
   background-color: white;
+
   html[data-theme='dark'] & {
     background-color: var(--global-bg-color);
   }
@@ -88,14 +108,17 @@ div.boxed {
   border: solid 1px lightgray;
   border-radius: 7px;
   background-color: white;
+
   html[data-theme='dark'] & {
     background-color: var(--global-bg-color);
   }
+
   margin-top: 20px;
 }
 
 div.title {
   color: rgb(0, 47, 255);
+
   html[data-theme='dark'] & {
     color: rgb(0, 147, 170);
   }
@@ -111,13 +134,13 @@ div.title {
 
 a.btn.btn-sm.z-depth-0 {
   // border-radius: 10px         !important;
-  border: none                !important;
-  padding: 0 0.3rem 0 0.3rem  !important;
+  border: none !important;
+  padding: 0 0.3rem 0 0.3rem !important;
   font-size: 1.2rem;
 }
 
 // Underline my name in publications
-.publications ol.bibliography li .author > em {
+.publications ol.bibliography li .author>em {
   border-bottom: none !important;
   text-decoration: underline;
   text-underline-offset: 4px;
@@ -125,7 +148,7 @@ a.btn.btn-sm.z-depth-0 {
 
 // Remove the <br> + date in selected publications
 // "h2 + ..." selects the first element after h2 not to affect the publications page
-h2 + .publications h2.bibliography {
+h2+.publications h2.bibliography {
   display: none;
 }
 
@@ -140,7 +163,7 @@ div.periodical {
 
 div.address {
   font-family: monospace !important;
-  font-size: 0.85rem  !important;
+  font-size: 0.85rem !important;
 }
 
 table.table.publications td {
@@ -174,29 +197,35 @@ ul.post-list {
   margin-top: 2rem;
 }
 
-ul.post-list > li {
+ul.post-list>li {
   padding-top: 1rem;
   padding-bottom: 0;
 }
 
-ul.post-list > li > h3 + p {
+ul.post-list>li>h3+p {
   display: none;
 }
 
-a[href="/news/"], a[href="/publications/"], a[href="/blog/"], a.nav-link {
+a[href="/news/"],
+a[href="/publications/"],
+a[href="/blog/"],
+a.nav-link {
   text-transform: capitalize;
 }
 
 .tag-category-list {
   margin-bottom: 1rem;
+
   ul {
-    p, li {
+
+    p,
+    li {
       padding: 0rem 0.1rem;
     }
   }
 }
 
-div.tag-category-list > ul > li + p {
+div.tag-category-list>ul>li+p {
   margin-bottom: 0.2rem;
   // background-color: red;
   // display: none;
@@ -207,7 +236,10 @@ div.post div.tag-category-list {
 }
 
 // This is needed for dir="auto" to work, otherwise will be rendered as LTR
-h1, h2, h3, p {
+h1,
+h2,
+h3,
+p {
   text-align: initial;
 }
 
@@ -219,7 +251,8 @@ div.abstract.hidden.open {
   border-radius: 5px;
 }
 
-table.table-sm th, table.table-sm td {
+table.table-sm th,
+table.table-sm td {
   padding-top: 0.3rem;
   padding-bottom: 0.3rem;
 }
@@ -228,7 +261,7 @@ table.table-sm th, table.table-sm td {
 //   border-radius: 50% !important;
 // }
 
-header.post-header > figure > picture > img {
+header.post-header>figure>picture>img {
   max-width: 130px;
   border-radius: 50% !important;
   float: left;
@@ -238,6 +271,7 @@ header.post-header > figure > picture > img {
 
 table.table {
   margin-bottom: 0.25rem;
+
   th {
     padding-left: 0;
   }
