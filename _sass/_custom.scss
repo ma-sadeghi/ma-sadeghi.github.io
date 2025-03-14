@@ -15,8 +15,38 @@ body {
   }
 }
 
+html {
+  font-size: 17px;
+}
+
+.publications ol.bibliography li .title {
+  font-weight: 600;
+}
+
+p.post-description {
+  font-size: 1rem;
+}
+
+h1.post-title {
+  font-weight: 600;
+}
+
+h2.bibliography {
+  margin-bottom: -40px;
+}
+
+div.title {
+  margin-top: 12px;
+}
+
 // Override Bootstrap's default font-weight: 300
-a, p, div, span, td, th {
+p,
+span,
+table td,
+table th,
+li a,
+div.author,
+div>a.title {
   font-weight: 400;
 }
 
@@ -43,7 +73,7 @@ pre code span {
 
 h2 {
   font-size: 1.5rem;
-  font-weight: bold;
+  font-weight: 600 !important;
 }
 
 .post .header-bar {
