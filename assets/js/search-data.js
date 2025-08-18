@@ -21,6 +21,13 @@ ninja.data = [{
           description: "Peer-reviewed publications and preprints in reversed chronological order.",
           section: "Navigation",
           handler: () => {
+            window.location.href = "/papers/";
+          },
+        },{id: "nav-talks",
+          title: "Talks",
+          description: "Conference presentations and invited talks in reversed chronological order.",
+          section: "Navigation",
+          handler: () => {
             window.location.href = "/publications/";
           },
         },{id: "nav-code",
