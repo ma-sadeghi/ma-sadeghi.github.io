@@ -1,9 +1,9 @@
 ---
 layout: page
-permalink: /publications/
+permalink: /papers/
 title: Publications
 description: Peer-reviewed publications and preprints in reversed chronological order.
-years: [2023, 2022, 2021, 2020, 2019, 2017, 2015]
+years: [2025, 2024, 2022, 2021, 2020, 2019, 2017, 2015]
 nav: true
 nav_order: 2
 ---
