@@ -5,6 +5,7 @@
 // @import url('https://fonts.googleapis.com/css2?family=Sarala:wght@400;700&display=swap');
 // @import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 @import url('https://fonts.cdnfonts.com/css/source-sans-pro');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap');
 
 body {
   background: url("/assets/img/background.png");
@@ -63,7 +64,7 @@ div,
 li,
 span,
 strong {
-  font-family: 'Source Sans Pro' !important;
+  font-family: 'IBM Plex Sans', 'Source Sans Pro' !important;
 }
 
 code,
