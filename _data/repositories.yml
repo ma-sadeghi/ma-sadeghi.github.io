@@ -6,6 +6,7 @@ repo_description_lines_max: 2
 github_repos:
   - PMEAL/OpenPNM
   - PMEAL/porespy
-  - PMEAL/BEaTmap
   - AUTODIAL/AutoEIS
   - ma-sadeghi/Tortuosity.jl
+  - ma-sadeghi/poromics
+  - PMEAL/BEaTmap
