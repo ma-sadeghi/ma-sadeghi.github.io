@@ -131,6 +131,7 @@ div.post>article {
   background-color: white;
 
   html[data-theme='dark'] & {
+    border-color: rgb(69, 69, 69);
     background-color: var(--global-bg-color);
   }
 }

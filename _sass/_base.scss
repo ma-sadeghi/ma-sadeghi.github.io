@@ -531,6 +531,12 @@ footer.sticky-bottom {
   color: var(--global-text-color);
 }
 
+// List group items (used in talks page and CV)
+.list-group-item {
+  background-color: var(--global-card-bg-color);
+  border-color: var(--global-divider-color);
+}
+
 .date-column {
   width: 75px;
   transform: translateX(-15px) translateY(-5px);
