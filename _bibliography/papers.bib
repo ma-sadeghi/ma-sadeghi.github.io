@@ -1,6 +1,31 @@
 ---
 ---
 
+@article{jaberi2025assessment,
+  abbr     = {arXiv},
+  abstract = {Electrochemical impedance spectroscopy (EIS) data is typically modeled using an equivalent circuit model (ECM), with parameters obtained by minimizing a loss function via nonlinear least squares fitting. This paper introduces two new loss functions, log-B and log-BW, derived from the Bode representation of EIS. Using a large dataset of generated EIS data, the performance of proposed loss functions was evaluated alongside existing ones in terms of R2 scores, chi-squared, computational efficiency, and the mean absolute percentage error (MAPE) between the predicted component values and the original values. Statistical comparisons revealed that the choice of loss function impacts convergence, computational efficiency, quality of fit, and MAPE. Our analysis showed that X2 loss function (squared sum of residuals with proportional weighting) achieved the highest performance across multiple quality of fit metrics, making it the preferred choice when the quality of fit is the primary goal. On the other hand, log-B offered a slightly lower quality of fit while being approximately 1.4 times faster and producing lower MAPE for most circuit components, making log-B as a strong alternative. This is a critical factor for large-scale least squares fitting in data-driven applications, such as training machine learning models on extensive datasets or iterations.},
+  html     = {https://doi.org/10.48550/arXiv.2510.09662},
+  pdf      = {https://github.com/user-attachments/files/23925303/jaberi2025arxiv.pdf},
+  title    = {Assessment of different loss functions for fitting equivalent circuit models to electrochemical impedance spectroscopy data},
+  author   = {Jaberi, Ali and Sadeghi, Amin and Zhang, Runze and Zhao, Zhaoyang and Shi, Qiuyu and Black, Robert and Sadighi, Zoya and Hattrick-Simpers, Jason},
+  journal  = {arXiv preprint arXiv:2510.09662},
+  year     = {2025}
+}
+
+@article{mckague2025magnet,
+  title    = {MAGNET: Medial Axis Guided Network Extraction Tool},
+  abbr     = {IPJ},
+  abstract = {Pore network models are useful for studying transport in porous materials in a computationally efficient way. Extraction of networks from volumetric images has evolved over the years, starting with medial axis-based approaches to more recent watershed segmentation. This paper reconsiders the classic medial axis method, which offers several advantages such as speed and topological correctness, and develops a modernized, updated, and improved version. The new method is named Medial Axis Guided Network Extraction Tool (MAGNET). It works by analyzing the skeleton of a porous material to identify pore centers at junctions and endpoints. Additional pore bodies are found on long throats using two different approaches. This work includes an efficient tool for calculating the cross-sectional area of throats with irregular shape by using walkers with an infinite mean-free path to probe the geometry orthogonal to the medial axis at the point of the throat constriction. This extra step was critical for obtaining an equivalent diameter needed to calculate the permeability. Lastly, MAGNET was written with computational efficiency in mind. The skeletonization approach was itself 4.2X faster than the SNOW watershed segmentation for a 10003 image. Additionally, a parallelized skeletonization was applied by processing the image in blocks with sufficient overlap which resulted in a 5.5X speed-up compared to the serial approach. To validate the output, MAGNET was tested on a 4003 voxel image of a Berea sandstone, and the flow and capillary properties of the extracted network were compared to the results from SNOW and the lattice-Boltzmann method. Structural information such as pore and throat size distribution and mercury intrusion curves was compared, and noticeable similarity was achieved. Crucially, the permeability predicted by MAGNET was within 5% of the lattice-Boltzmann prediction on the same image.},
+  html     = {https://doi.org/10.69631/g47x8w91},
+  pdf      = {https://github.com/user-attachments/files/23925273/mckague2025ipj.pdf},
+  author   = {McKague, Michael and Fathiannasab, Hamed and Sadeghi, Mohammad Amin and Gostick, Jeff},
+  journal  = {InterPore Journal},
+  volume   = {2},
+  number   = {4},
+  pages    = {IPJ011225--7},
+  year     = {2025}
+}
+
 @article{sadeghi2025autoeis,
   selected = {true},
   abbr     = {JOSS},
