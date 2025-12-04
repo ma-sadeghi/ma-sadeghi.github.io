@@ -1,0 +1,33 @@
+#!/bin/bash
+# Serve script - Runs the Jekyll development server
+
+set -e  # Exit on error
+
+echo "=========================================="
+echo "Starting Jekyll development server..."
+echo "=========================================="
+
+# Ensure rbenv is in PATH
+export PATH="$HOME/.rbenv/shims:$PATH"
+
+# Check if .venv exists
+if [ ! -d ".venv" ]; then
+    echo "❌ Error: Python virtual environment not found!"
+    echo "Please run ./bin/setup first"
+    exit 1
+fi
+
+# Check if vendor/bundle exists
+if [ ! -d "vendor/bundle" ]; then
+    echo "❌ Error: Ruby gems not installed!"
+    echo "Please run ./bin/setup first"
+    exit 1
+fi
+
+# Activate Python virtual environment and run Jekyll
+echo ""
+echo "Server will be available at: http://127.0.0.1:4000"
+echo "Press Ctrl+C to stop the server"
+echo ""
+
+source ./.venv/bin/activate && bundle exec jekyll serve --lsi

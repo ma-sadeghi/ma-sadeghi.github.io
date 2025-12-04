@@ -1,0 +1,70 @@
+#!/bin/bash
+# Setup script - Installs all dependencies for the project
+
+set -e  # Exit on error
+
+echo "=========================================="
+echo "Setting up Jekyll blog environment..."
+echo "=========================================="
+
+# Check if rbenv is initialized
+if ! command -v rbenv &> /dev/null; then
+    echo "❌ Error: rbenv not found!"
+    echo "Please install rbenv first: brew install rbenv ruby-build"
+    echo "And add to your shell: eval \"\$(rbenv init - zsh)\""
+    exit 1
+fi
+
+# Check if ImageMagick is installed
+if ! command -v convert &> /dev/null; then
+    echo "⚠️  Warning: ImageMagick not found!"
+    echo "Installing ImageMagick..."
+    brew install imagemagick
+fi
+
+echo ""
+echo "1️⃣  Installing Ruby dependencies..."
+echo "----------------------------------------"
+
+# Ensure we're using the right Ruby version
+export PATH="$HOME/.rbenv/shims:$PATH"
+
+# Install bundler if needed
+if ! command -v bundle &> /dev/null; then
+    echo "Installing bundler..."
+    gem install bundler
+fi
+
+# Configure bundler for local installation
+bundle config set --local path 'vendor/bundle'
+
+# Install gems
+echo "Installing Ruby gems..."
+bundle install
+
+echo ""
+echo "2️⃣  Installing Python dependencies..."
+echo "----------------------------------------"
+
+# Check if uv is installed
+if ! command -v uv &> /dev/null; then
+    echo "❌ Error: uv not found!"
+    echo "Please install uv first: https://github.com/astral-sh/uv"
+    exit 1
+fi
+
+# Create virtual environment and install Python dependencies
+echo "Creating Python virtual environment..."
+uv venv --clear
+
+echo "Installing Python packages..."
+uv pip install -r requirements.txt
+
+echo ""
+echo "=========================================="
+echo "✅ Setup complete!"
+echo "=========================================="
+echo ""
+echo "To start the development server, run:"
+echo "  ./bin/serve"
+echo ""
