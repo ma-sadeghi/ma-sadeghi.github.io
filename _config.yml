@@ -627,6 +627,18 @@ third_party_libraries:
 jekyll_get_json:
   - data: resume
     json: assets/json/resume.json # it can also be an url
+  - data: repo_openpnm
+    json: https://api.github.com/repos/PMEAL/OpenPNM
+  - data: repo_porespy
+    json: https://api.github.com/repos/PMEAL/porespy
+  - data: repo_autoeis
+    json: https://api.github.com/repos/AUTODIAL/AutoEIS
+  - data: repo_tortuosity
+    json: https://api.github.com/repos/ma-sadeghi/Tortuosity.jl
+  - data: repo_poromics
+    json: https://api.github.com/repos/ma-sadeghi/poromics
+  - data: repo_beatmap
+    json: https://api.github.com/repos/PMEAL/BEaTmap
 
 jsonresume:
   - basics
