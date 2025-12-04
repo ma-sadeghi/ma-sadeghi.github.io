@@ -30,4 +30,4 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I'm a chemical engineer by training, and a machine learning and software engineer by practice. I have a solid background in numerical methods, optimization, and machine learning. I'm the co-creator and maintainer of [OpenPNM](https://github.com/PMEAL/OpenPNM) and [PoreSpy](https://github.com/PMEAL/porespy), among other [open-source projects](https://github.com/ma-sadeghi/). Currently, I'm exploring using machine learning to accelerate PDE solvers - finding computational shortcuts for complex physics problems.
+I’m a machine learning researcher and a software engineer. I co-created and maintain [OpenPNM](https://github.com/PMEAL/OpenPNM) and [PoreSpy](https://github.com/PMEAL/porespy), along with several other [open-source projects](https://github.com/ma-sadeghi/). Lately I’ve been focusing on how machine learning can speed up PDE solvers. I still draw on my background in chemical engineering, materials science, and data science whenever a project calls for it.
