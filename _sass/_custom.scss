@@ -323,3 +323,16 @@ hr {
   margin-top: 1rem;
   margin-bottom: 0.8rem;
 }
+
+footer.fixed-bottom {
+  html[data-theme='dark'] & {
+    border-top: solid 1px rgba(69, 69, 69, 0.8);
+    background-color: var(--global-bg-color);
+  }
+}
+
+footer.fixed-bottom .container {
+  html[data-theme='dark'] & {
+    color: var(--global-text-color);
+  }
+}
