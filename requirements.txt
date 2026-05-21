@@ -1,2 +1,5 @@
 nbconvert
 ipython
+pyyaml
+rendercv[full]
+scholarly
